@@ -17,7 +17,7 @@
 
         // Scene setup
         const scene = new THREE.Scene();
-        scene.background = new THREE.Color(0xeeeeee);
+        scene.background = new THREE.Color(0x9AC8D8);
 
         const camera = new THREE.PerspectiveCamera(
             75, window.innerWidth / window.innerHeight, 0.1, 1000
@@ -44,7 +44,7 @@
         // Load model
         const loader = new GLTFLoader();
         loader.load(
-            'cube.glb',
+            'finn_the_human_adventure_time.glb',
             (gltf) => {
                 // Add error checking for model loading
                 const model = gltf.scene;
